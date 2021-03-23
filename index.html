@@ -42,7 +42,7 @@
       justify-content: space-between;
       align-items: center;
       width: 80%;
-      color: #1b014c;
+      color: #000000;
       font-weight: bold;
     }
 
@@ -51,7 +51,7 @@
       font-size: 12px;
       text-align: left;
       font-style: italic;
-      color: #1b014c;
+      color: #000000;
     }
 
     h3 {
@@ -128,12 +128,12 @@
   <script>
 
     var ctx = document.getElementById("myChart").getContext("2d");
-    Chart.defaults.global.defaultFontColor = "rgb(27,1,76)";
+    Chart.defaults.global.defaultFontColor = "rgb(0, 0, 0)";
     Chart.defaults.global.defaultFontFamily = "Roboto";
     // Chart.defaults.global.legend.padding="60"
     var myChart = new Chart(ctx, {
       type: "horizontalBar",
-      fontColor: "rgb(27,1,76)",
+      fontColor: "rgb(0,0,0)",
       data: {
 
         labels: ["Payments", "Accounts", "Bank products/ATM Locations", "Identity (KYC and authentication", "Credit scoring/loan pre-approvals", "Multiple functionaltiy", "Utilities", "Credit Cards", "FX", "Data Products", "Trading", "Loyalty/rewards", "Other"],
@@ -146,27 +146,27 @@
 
             backgroundColor: [
 
+             
+              "#cbbaed",
+              "#cbbaed",
+              "#cbbaed",
+              "#ffd23f",
+              "#ffd23f",
+              "#cbbaed",
               "#ffd23f",
               "#ffd23f",
               "#ffd23f",
-              "#cbbaed",
-              "#cbbaed",
-              "#cbbaed",
-              "#cbbaed",
-              "#cbbaed",
-              "#cbbaed",
-              "#cbbaed",
-              "#cbbaed",
-              "#cbbaed",
-              "#cbbaed"
-
+              "#ffd23f",
+              "#ffd23f",
+              "#ffd23f",
+              "#ffd23f",
 
             ],
             borderWidth: 0,
           },
           {
             label: "Other Bank API products",
-            backgroundColor: ["#cbbaed",]
+            backgroundColor: ["#ffd23f",,]
 
 
           }
@@ -174,7 +174,7 @@
       },
       options: {
         tooltips: {enabled: false},
-    hover: {mode: null},
+        hover: {mode: null},
         responsive: true,
         maintainAspectRatio: false,
 
@@ -226,7 +226,7 @@
               ticks: {
                 suggestedMin: 2000,
                 fontSize: 13,
-                fontColor: "rgb(27,1,76)",
+                fontColor: "rgb(0, 0, 0)",
 
 
               },
@@ -235,7 +235,7 @@
           xAxes: [{
             ticks: {
               fontSize: 13,
-              fontColor: "rgb(27,1,76)",
+              fontColor: "rgb(0, 0, 0)",
               suggestedMin: 2000
             }
           }]
