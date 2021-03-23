@@ -31,7 +31,7 @@
 
 
     #chartdiv {
-      width: 85%;
+      width: 80%;
       display: flex;
       justify-content: flex-start;
     }
@@ -41,7 +41,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      width: 85%;
+      width: 80%;
       color: #1b014c;
       font-weight: bold;
     }
@@ -59,7 +59,7 @@
     }
 
     #descdiv {
-      width: 85%;
+      width: 80%;
     }
 
 
@@ -75,6 +75,20 @@
     @media only screen and (max-width:1650px) {
       h3 {
         font-size: 18px;
+      }
+    }
+
+    @media only screen and (max-width:1256px) {
+      #chartdiv{
+        width:100%;
+      }
+
+      #headerdiv{
+          width:100%;
+      }
+
+      #descdiv{
+          width:100%;
       }
     }
 
@@ -100,7 +114,7 @@
       </div>
       <img src="./platformable-logo-blue.png" width="210px">
     </div>
-    <div id="chartdiv"><canvas id="myChart" height="770"></canvas></div>
+    <div id="chartdiv"><canvas id="myChart" width="100%" height="890"></canvas></div>
     <div id="descdiv">
       <p id="p"><strong>Methodology:</strong> Platformable tracks all banks globally and tallies those that have
         established an open API platform. We then review how many API products are made available by each bank and tally
@@ -159,6 +173,8 @@
         ],
       },
       options: {
+        tooltips: {enabled: false},
+    hover: {mode: null},
         responsive: true,
         maintainAspectRatio: false,
 
@@ -206,7 +222,7 @@
               gridLines: {
                 color: "rgba(0, 0, 0, 0)",
               },
-              barThickness: 23,
+              barThickness: 28,
               ticks: {
                 suggestedMin: 2000,
                 fontSize: 13,
